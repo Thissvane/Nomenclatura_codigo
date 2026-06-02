@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nomenclatura en Código</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- BARRA DE NAVEGACIÓN -->
+  <nav class="barra-navegacion">
+    <div class="marca-navegacion">
+      <span class="logo-navegacion">&lt;/&gt;</span>
+      <span class="titulo-navegacion">Nomenclatura en Código</span>
+    </div>
+    <ul class="lista-enlaces">
+      <li><a href="#" class="enlace-navegacion activo" data-slide="0">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        Inicio
+      </a></li>
+      <li><a href="#" class="enlace-navegacion" data-slide="1">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9h16M4 15h16"/></svg>
+        Una letra
+      </a></li>
+      <li><a href="#" class="enlace-navegacion" data-slide="2">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg>
+        Convenciones
+      </a></li>
+      <li><a href="#" class="enlace-navegacion" data-slide="3">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
+        Abreviaciones
+      </a></li>
+      <li><a href="#" class="enlace-navegacion" data-slide="4">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        Propósito
+      </a></li>
+      <li><a href="#" class="enlace-navegacion" data-slide="5">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+        Booleanas
+      </a></li>
+      <li><a href="#" class="enlace-navegacion" data-slide="6">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Ejemplo
+      </a></li>
+      <li><a href="#" class="enlace-navegacion" data-slide="7">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        Resumen
+      </a></li>
+    </ul>
+    <div class="contador-diapositivas">
+      <span id="current-slide">1</span> / <span id="total-slides">8</span>
+    </div>
+  </nav>
+
+  <!-- CONTENEDOR DE DIAPOSITIVAS -->
+  <main class="contenedor-diapositivas">
+
+    <!-- DIAPOSITIVA 1: INICIO -->
+    <section class="diapositiva activa" id="slide-0">
+      <div class="decoracion-fondo">
+        <span class="llave-fondo izquierda">{</span>
+        <span class="llave-fondo derecha">}</span>
+        <span class="etiquetas-fondo">&lt;/&gt;</span>
+      </div>
+      <div class="contenido-portada">
+        <div class="icono-portada">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+          </svg>
+        </div>
+        <h1 class="titulo-portada">
+          <span class="titulo-blanco">Errores Comunes</span><br/>
+          <span class="titulo-morado">en Nomenclatura</span>
+        </h1>
+        <p class="subtitulo-portada">Proyectos estudiantiles · Variables, funciones y clases</p>
+        <div class="temas-portada">
+          <div class="boton-tema" data-goto="1">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9h16M4 15h16"/></svg>
+            Una letra
+          </div>
+          <div class="boton-tema" data-goto="2">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg>
+            Convenciones
+          </div>
+          <div class="boton-tema" data-goto="3">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
+            Abreviaciones
+          </div>
+          <div class="boton-tema" data-goto="4">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Propósito
+          </div>
+          <div class="boton-tema" data-goto="5">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85"/></svg>
+            Booleanas
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIAPOSITIVA 2: UNA LETRA -->
+    <section class="diapositiva" id="slide-1">
+      <div class="decoracion-fondo">
+        <span class="llave-fondo izquierda">{</span>
+        <span class="llave-fondo derecha">}</span>
+        <span class="etiquetas-fondo">&lt;/&gt;</span>
+      </div>
+      <div class="encabezado-diapositiva">
+        <div class="icono-encabezado" style="background: linear-gradient(135deg,#e53e3e,#c53030)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M4 9h16M4 15h16"/></svg>
+        </div>
+        <div>
+          <div class="etiqueta-error">ERROR #1</div>
+          <h2 class="titulo-diapositiva">Nombres de una sola letra</h2>
+        </div>
+        <div class="pastillas-etiqueta">
+          <span class="pastilla-etiqueta">x</span>
+          <span class="separador-etiqueta">,</span>
+          <span class="pastilla-etiqueta">n</span>
+          <span class="separador-etiqueta">,</span>
+          <span class="pastilla-etiqueta">d</span>
+          <span class="separador-etiqueta">,</span>
+          <span class="pastilla-etiqueta">tmp</span>
+        </div>
+      </div>
+      <div class="descripcion-diapositiva">
+        Usar una sola letra como nombre no comunica nada sobre el dato que almacena. Quien lea el código —incluyendo tú mismo tres días después— no sabrá qué representa.
+      </div>
+      <div class="paneles-codigo">
+        <div class="panel-codigo incorrecto">
+          <div class="encabezado-panel">
+            <div class="etiqueta-panel etiqueta-incorrecta">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+              INCORRECTO ✕
+            </div>
+            <div class="puntos-panel"><span></span><span></span><span></span></div>
+          </div>
+          <pre class="contenido-codigo codigo-incorrecto"><span class="kw">function</span> <span class="fn">calc</span>(x, n) {
+  <span class="kw">let</span> t = <span class="num">0</span>;
+  <span class="kw">for</span> (<span class="kw">let</span> i = <span class="num">0</span>; i &lt; n; i++) {
+    t += x[i];
+  }
+  <span class="kw">return</span> t / n;
+}
+
+<span class="comment">// ¿Qué es x? ¿Qué es n?</span>
+<span class="comment">// ¿t es temperatura, total, tiempo?</span>
+<span class="comment">// i sólo está bien en un bucle corto</span></pre>
+        </div>
+        <div class="panel-codigo correcto">
+          <div class="encabezado-panel">
+            <div class="etiqueta-panel etiqueta-correcta">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              CORRECTO ■
+            </div>
+            <div class="puntos-panel puntos-correctos"><span></span><span></span><span></span></div>
+          </div>
+          <pre class="contenido-codigo codigo-correcto"><span class="kw">function</span> <span class="fn">calculateAverage</span>(numbers, count) {
+  <span class="kw">let</span> total = <span class="num">0</span>;
+  <span class="kw">for</span> (<span class="kw">let</span> index = <span class="num">0</span>; index &lt; count; index++) {
+    total += numbers[index];
+  }
+  <span class="kw">return</span> total / count;
+}
+
+<span class="comment">// Ahora es completamente legible:</span>
+<span class="comment">// numbers = arreglo de números</span>
+<span class="comment">// total   = acumulador de la suma</span>
+<span class="comment">// count   = cuántos elementos hay</span></pre>
+        </div>
+      </div>
+      <div class="tarjetas-inferiores">
+        <div class="tarjeta-inferior">
+          <span class="texto-incorrecto">x</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a0aec0" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <span class="texto-correcto">customerAge</span>
+          <div class="descripcion-tarjeta-inferior">edad del cliente</div>
+        </div>
+        <div class="tarjeta-inferior">
+          <span class="texto-incorrecto">d</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a0aec0" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <span class="texto-correcto">orderDate</span>
+          <div class="descripcion-tarjeta-inferior">fecha del pedido</div>
+        </div>
+        <div class="tarjeta-inferior">
+          <span class="texto-incorrecto">tmp</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a0aec0" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <span class="texto-correcto">temporaryFile</span>
+          <div class="descripcion-tarjeta-inferior">archivo temporal</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIAPOSITIVA 3: CONVENCIONES -->
+    <section class="diapositiva" id="slide-2">
+      <div class="decoracion-fondo">
+        <span class="llave-fondo izquierda">{</span>
+        <span class="llave-fondo derecha">}</span>
+      </div>
+      <div class="encabezado-diapositiva">
+        <div class="icono-encabezado" style="background: linear-gradient(135deg,#d69e2e,#b7791f)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg>
+        </div>
+        <div>
+          <div class="etiqueta-error">ERROR #2</div>
+          <h2 class="titulo-diapositiva">Mezcla de convenciones</h2>
+        </div>
+        <div class="pastillas-etiqueta">
+          <span class="pastilla-etiqueta">snake_case</span>
+          <span class="pastilla-etiqueta">PascalCase</span>
+          <span class="pastilla-etiqueta">ALLCAPS</span>
+        </div>
+      </div>
+      <div class="descripcion-diapositiva">
+        Cada lenguaje tiene sus propias convenciones de nombrado. Mezclarlas en el mismo archivo o proyecto genera inconsistencia que dificulta la lectura y mantenimiento del código.
+      </div>
+      <div class="paneles-codigo">
+        <div class="panel-codigo incorrecto">
+          <div class="encabezado-panel">
+            <div class="etiqueta-panel etiqueta-incorrecta">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+              INCORRECTO ✕
+            </div>
+            <div class="puntos-panel"><span></span><span></span><span></span></div>
+          </div>
+          <pre class="contenido-codigo codigo-incorrecto"><span class="comment">// Mezcla caótica de estilos</span>
+<span class="kw">const</span> user_name = <span class="str">"Ana"</span>;
+<span class="kw">const</span> UserAge = <span class="num">22</span>;
+<span class="kw">const</span> USEREMAIL = <span class="str">"ana@mail.com"</span>;
+
+<span class="kw">function</span> <span class="fn">Get_User_Data</span>() { }
+<span class="kw">function</span> <span class="fn">processuser</span>() { }
+<span class="kw">function</span> <span class="fn">UpdateUSER</span>() { }
+
+<span class="kw">class</span> student_record { }
+<span class="kw">class</span> UserManager { }
+<span class="kw">class</span> REPOSITORY { }</pre>
+        </div>
+        <div class="panel-codigo correcto">
+          <div class="encabezado-panel">
+            <div class="etiqueta-panel etiqueta-correcta">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              CORRECTO ■
+            </div>
+            <div class="puntos-panel puntos-correctos"><span></span><span></span><span></span></div>
+          </div>
+          <pre class="contenido-codigo codigo-correcto"><span class="comment">// JavaScript → camelCase para variables/funciones</span>
+<span class="comment">//              PascalCase para clases</span>
+<span class="kw">const</span> userName = <span class="str">"Ana"</span>;
+<span class="kw">const</span> userAge = <span class="num">22</span>;
+<span class="kw">const</span> userEmail = <span class="str">"ana@mail.com"</span>;
+
+<span class="kw">function</span> <span class="fn">getUserData</span>() { }
+<span class="kw">function</span> <span class="fn">processUser</span>() { }
+<span class="kw">function</span> <span class="fn">updateUser</span>() { }
+
+<span class="kw">class</span> StudentRecord { }
+<span class="kw">class</span> UserManager { }
+<span class="kw">class</span> Repository { }</pre>
+        </div>
+      </div>
+      <div class="cuadricula-lenguajes">
+        <div class="tarjeta-lenguaje">
+          <div class="nombre-lenguaje">JavaScript</div>
+          <div class="fila-lenguaje"><span>Variables</span><span class="estilo-camel">camelCase</span></div>
+          <div class="fila-lenguaje"><span>Clases</span><span class="estilo-pascal">PascalCase</span></div>
+          <div class="fila-lenguaje"><span>Constantes</span><span class="estilo-mayusculas">UPPER_SNAKE</span></div>
+        </div>
+        <div class="tarjeta-lenguaje">
+          <div class="nombre-lenguaje">Python</div>
+          <div class="fila-lenguaje"><span>Variables</span><span class="estilo-serpiente">snake_case</span></div>
+          <div class="fila-lenguaje"><span>Clases</span><span class="estilo-pascal">PascalCase</span></div>
+          <div class="fila-lenguaje"><span>Constantes</span><span class="estilo-mayusculas">UPPER_SNAKE</span></div>
+        </div>
+        <div class="tarjeta-lenguaje">
+          <div class="nombre-lenguaje">Java</div>
+          <div class="fila-lenguaje"><span>Variables</span><span class="estilo-camel">camelCase</span></div>
+          <div class="fila-lenguaje"><span>Clases</span><span class="estilo-pascal">PascalCase</span></div>
+          <div class="fila-lenguaje"><span>Constantes</span><span class="estilo-mayusculas">UPPER_SNAKE</span></div>
+        </div>
+        <div class="tarjeta-lenguaje">
+          <div class="nombre-lenguaje">C#</div>
+          <div class="fila-lenguaje"><span>Variables</span><span class="estilo-camel">camelCase</span></div>
+          <div class="fila-lenguaje"><span>Clases</span><span class="estilo-pascal">PascalCase</span></div>
+          <div class="fila-lenguaje"><span>Constantes</span><span class="estilo-pascal">PascalCase</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIAPOSITIVA 4: ABREVIACIONES -->
+    <section class="diapositiva" id="slide-3">
+      <div class="decoracion-fondo">
+        <span class="llave-fondo izquierda">{</span>
+        <span class="llave-fondo derecha">}</span>
+      </div>
+      <div class="encabezado-diapositiva">
+        <div class="icono-encabezado" style="background: linear-gradient(135deg,#805ad5,#6b46c1)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
+        </div>
+        <div>
+          <div class="etiqueta-error">ERROR #3</div>
+          <h2 class="titulo-diapositiva">Abreviaciones crípticas</h2>
+        </div>
+        <div class="pastillas-etiqueta">
+          <span class="pastilla-etiqueta">usrNm</span>
+          <span class="separador-etiqueta">·</span>
+          <span class="pastilla-etiqueta">calcTtl</span>
+          <span class="separador-etiqueta">·</span>
+          <span class="pastilla-etiqueta">prdLst</span>
+        </div>
+      </div>
+      <div class="descripcion-diapositiva">
+        Acortar nombres para ahorrar caracteres resulta contraproducente: el tiempo que se gana escribiendo se pierde leyendo. Los editores modernos tienen autocompletado — no hay excusa para abreviar.
+      </div>
+      <div class="paneles-codigo">
+        <div class="panel-codigo incorrecto">
+          <div class="encabezado-panel">
+            <div class="etiqueta-panel etiqueta-incorrecta">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+              INCORRECTO ✕
+            </div>
+            <div class="puntos-panel"><span></span><span></span><span></span></div>
+          </div>
+          <pre class="contenido-codigo codigo-incorrecto"><span class="kw">function</span> <span class="fn">procOrd</span>(usrNm, prdLst, dscnt) {
+  <span class="kw">const</span> subTtl = <span class="fn">calcTtl</span>(prdLst);
+  <span class="kw">const</span> fnlPrc = <span class="fn">applyDscnt</span>(subTtl, dscnt);
+  <span class="kw">const</span> ordConf = <span class="fn">genConf</span>(usrNm, fnlPrc);
+  <span class="kw">return</span> ordConf;
+}
+
+<span class="comment">// ¿procOrd = process order? ¿procedure ordinary?</span>
+<span class="comment">// ¿usrNm  = username? ¿user number?</span>
+<span class="comment">// ¿fnlPrc = final price? ¿final process?</span></pre>
+        </div>
+        <div class="panel-codigo correcto">
+          <div class="encabezado-panel">
+            <div class="etiqueta-panel etiqueta-correcta">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              CORRECTO ■
+            </div>
+            <div class="puntos-panel puntos-correctos"><span></span><span></span><span></span></div>
+          </div>
+          <pre class="contenido-codigo codigo-correcto"><span class="kw">function</span> <span class="fn">processOrder</span>(userName, productList, discount) {
+  <span class="kw">const</span> subtotal = <span class="fn">calculateTotal</span>(productList);
+  <span class="kw">const</span> finalPrice = <span class="fn">applyDiscount</span>(subtotal, discount);
+  <span class="kw">const</span> orderConfirmation = <span class="fn">generateConfirmation</span>(
+    userName, finalPrice
+  );
+  <span class="kw">return</span> orderConfirmation;
+}
+
+<span class="comment">// Perfectamente legible, sin ambigüedad alguna.</span>
+<span class="comment">// El autocompletado escribe el resto por ti.</span></pre>
+        </div>
+      </div>
+      <div class="cuadricula-abreviaciones">
+        <div class="tarjeta-abreviacion">
+          <div class="abreviacion-incorrecta">usrNm</div>
+          <div class="flecha-abreviacion">↓</div>
+          <div class="abreviacion-correcta">userName</div>
+        </div>
+        <div class="tarjeta-abreviacion">
+          <div class="abreviacion-incorrecta">calcTtl</div>
+          <div class="flecha-abreviacion">↓</div>
+          <div class="abreviacion-correcta">calculateTotal</div>
+        </div>
+        <div class="tarjeta-abreviacion">
+          <div class="abreviacion-incorrecta">prdLst</div>
+          <div class="flecha-abreviacion">↓</div>
+          <div class="abreviacion-correcta">productList</div>
+        </div>
+        <div class="tarjeta-abreviacion">
+          <div class="abreviacion-incorrecta">dscnt</div>
+          <div class="flecha-abreviacion">↓</div>
+          <div class="abreviacion-correcta">discount</div>
+        </div>
+        <div class="tarjeta-abreviacion">
+          <div class="abreviacion-incorrecta">ordConf</div>
+          <div class="flecha-abreviacion">↓</div>
+          <div class="abreviacion-correcta">orderConfirmation</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIAPOSITIVA 5: PROPÓSITO -->
+    <section class="diapositiva" id="slide-4">
+      <div class="decoracion-fondo">
+        <span class="llave-fondo izquierda">{</span>
+        <span class="llave-fondo derecha">}</span>
+      </div>
+      <div class="encabezado-diapositiva">
+        <div class="icono-encabezado" style="background: linear-gradient(135deg,#319795,#2c7a7b)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <div>
+          <div class="etiqueta-error">ERROR #4</div>
+          <h2 class="titulo-diapositiva">Nombres que no reflejan el propósito</h2>
+        </div>
+        <div class="pastillas-etiqueta">
+          <span class="pastilla-etiqueta">data</span>
+          <span class="separador-etiqueta">·</span>
+          <span class="pastilla-etiqueta">temp</span>
+          <span class="separador-etiqueta">·</span>
+          <span class="pastilla-etiqueta">info</span>
+          <span class="separador-etiqueta">·</span>
+          <span class="pastilla-etiqueta">doStuff</span>
+        </div>
+      </div>
+      <div class="descripcion-diapositiva">
+        Nombres genéricos como <code>data</code>, <code>temp</code>, <code>info</code> o <code>doStuff</code> no dicen nada sobre el contenido o acción. El nombre debe responder "¿qué hay aquí?" o "¿qué hace esto?".
+      </div>
+      <div class="paneles-codigo">
+        <div class="panel-codigo incorrecto">
+          <div class="encabezado-panel">
+            <div class="etiqueta-panel etiqueta-incorrecta">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+              INCORRECTO ✕
+            </div>
+            <div class="puntos-panel"><span></span><span></span><span></span></div>
+          </div>
+          <pre class="contenido-codigo codigo-incorrecto"><span class="kw">const</span> data = <span class="fn">fetchFromAPI</span>(<span class="str">"/users"</span>);
+<span class="kw">const</span> temp = data.users;
+<span class="kw">const</span> info = temp.filter(x =&gt; x.value &gt; <span class="num">100</span>);
+
+<span class="kw">function</span> <span class="fn">doStuff</span>(thing) {
+  <span class="kw">return</span> thing * <span class="num">2</span>;
+}
+
+<span class="kw">function</span> <span class="fn">handle</span>(e) {
+  <span class="fn">process</span>(e);
+}
+
+<span class="kw">class</span> Manager {
+  <span class="fn">do</span>() { }
+}</pre>
+        </div>
+        <div class="panel-codigo correcto">
+          <div class="encabezado-panel">
+            <div class="etiqueta-panel etiqueta-correcta">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              CORRECTO ■
+            </div>
+            <div class="puntos-panel puntos-correctos"><span></span><span></span><span></span></div>
+          </div>
+          <pre class="contenido-codigo codigo-correcto"><span class="kw">const</span> apiResponse = <span class="fn">fetchFromAPI</span>(<span class="str">"/users"</span>);
+<span class="kw">const</span> allUsers = apiResponse.users;
+<span class="kw">const</span> premiumUsers = allUsers.filter(
+  user =&gt; user.score &gt; <span class="num">100</span>
+);
+
+<span class="kw">function</span> <span class="fn">doubleScore</span>(currentScore) {
+  <span class="kw">return</span> currentScore * <span class="num">2</span>;
+}
+
+<span class="kw">function</span> <span class="fn">handleLoginClick</span>(event) {
+  <span class="fn">authenticateUser</span>(event);
+}
+
+<span class="kw">class</span> UserAccountManager {
+  <span class="fn">deactivateAccount</span>() { }
+}</pre>
+        </div>
+      </div>
+      <div class="cuadricula-reglas">
+        <div class="tarjeta-regla">
+          <div class="etiqueta-regla">REGLA PARA VARIABLES</div>
+          <p>El nombre debe responder <strong>¿qué contiene este dato?</strong> Si no puedes responder sin ver el código, renómbralo.</p>
+        </div>
+        <div class="tarjeta-regla">
+          <div class="etiqueta-regla">REGLA PARA FUNCIONES</div>
+          <p>El nombre debe responder <strong>¿qué acción realiza?</strong> Usa verbos: <code>get</code>, <code>create</code>, <code>update</code>, <code>delete</code>, <code>calculate</code>, <code>validate</code>…</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIAPOSITIVA 6: BOOLEANAS -->
+    <section class="diapositiva" id="slide-5">
+      <div class="decoracion-fondo">
+        <span class="llave-fondo izquierda">{</span>
+        <span class="llave-fondo derecha">}</span>
+      </div>
+      <div class="encabezado-diapositiva">
+        <div class="icono-encabezado" style="background: linear-gradient(135deg,#38a169,#276749)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85"/></svg>
+        </div>
+        <div>
+          <div class="etiqueta-error">ERROR #5</div>
+          <h2 class="titulo-diapositiva">Booleanas sin prefijo is/has/can</h2>
+        </div>
+        <div class="pastillas-etiqueta">
+          <span class="pastilla-etiqueta">is</span>
+          <span class="pastilla-etiqueta">has</span>
+          <span class="pastilla-etiqueta">can</span>
+          <span class="pastilla-etiqueta">should</span>
+        </div>
+      </div>
+      <div class="descripcion-diapositiva">
+        Una booleana sin prefijo no se lee como pregunta. Con el prefijo correcto, el código se lee como lenguaje natural: <code>if (isLoggedIn)</code> vs <code>if (loggedIn)</code> — la primera se entiende instantáneamente.
+      </div>
+      <div class="paneles-codigo">
+        <div class="panel-codigo incorrecto">
+          <div class="encabezado-panel">
+            <div class="etiqueta-panel etiqueta-incorrecta">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+              INCORRECTO ✕
+            </div>
+            <div class="puntos-panel"><span></span><span></span><span></span></div>
+          </div>
+          <pre class="contenido-codigo codigo-incorrecto"><span class="kw">const</span> loggedIn = <span class="kw">true</span>;
+<span class="kw">const</span> admin = <span class="kw">false</span>;
+<span class="kw">const</span> visible = <span class="kw">true</span>;
+<span class="kw">const</span> loading = <span class="kw">false</span>;
+<span class="kw">const</span> active = <span class="kw">true</span>;
+
+<span class="kw">function</span> <span class="fn">validate</span>(user) {
+  <span class="kw">return</span> user.age &gt;= <span class="num">18</span>;
+}
+
+<span class="kw">if</span> (loggedIn &amp;&amp; admin) {
+  <span class="fn">showPanel</span>();
+}</pre>
+        </div>
+        <div class="panel-codigo correcto">
+          <div class="encabezado-panel">
+            <div class="etiqueta-panel etiqueta-correcta">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              CORRECTO ■
+            </div>
+            <div class="puntos-panel puntos-correctos"><span></span><span></span><span></span></div>
+          </div>
+          <pre class="contenido-codigo codigo-correcto"><span class="kw">const</span> isLoggedIn = <span class="kw">true</span>;
+<span class="kw">const</span> isAdmin = <span class="kw">false</span>;
+<span class="kw">const</span> isVisible = <span class="kw">true</span>;
+<span class="kw">const</span> isLoading = <span class="kw">false</span>;
+<span class="kw">const</span> isActive = <span class="kw">true</span>;
+
+<span class="kw">function</span> <span class="fn">canValidate</span>(user) {
+  <span class="kw">return</span> user.age &gt;= <span class="num">18</span>;
+}
+
+<span class="kw">if</span> (isLoggedIn &amp;&amp; isAdmin) {
+  <span class="fn">showAdminPanel</span>();
+}</pre>
+        </div>
+      </div>
+      <div class="cuadricula-booleanas">
+        <div class="tarjeta-booleana">
+          <div class="prefijo-booleana">is___</div>
+          <div class="tipo-booleana">Estado actual</div>
+          <div class="ejemplos-booleana">isLoggedIn, isActive, isEmpty</div>
+        </div>
+        <div class="tarjeta-booleana">
+          <div class="prefijo-booleana">has___</div>
+          <div class="tipo-booleana">Posesión</div>
+          <div class="ejemplos-booleana">hasPermission, hasChildren</div>
+        </div>
+        <div class="tarjeta-booleana">
+          <div class="prefijo-booleana">can___</div>
+          <div class="tipo-booleana">Capacidad</div>
+          <div class="ejemplos-booleana">canEdit, canDelete, canView</div>
+        </div>
+        <div class="tarjeta-booleana">
+          <div class="prefijo-booleana">should___</div>
+          <div class="tipo-booleana">Decisión</div>
+          <div class="ejemplos-booleana">shouldRedirect, shouldRetry</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIAPOSITIVA 7: EJEMPLO INTEGRAL -->
+    <section class="diapositiva" id="slide-6">
+      <div class="decoracion-fondo">
+        <span class="llave-fondo izquierda">{</span>
+        <span class="llave-fondo derecha">}</span>
+      </div>
+      <div class="encabezado-diapositiva">
+        <div class="icono-encabezado" style="background: linear-gradient(135deg,#6366f1,#4338ca)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/></svg>
+        </div>
+        <div>
+          <div class="etiqueta-error">EJEMPLO INTEGRAL</div>
+          <h2 class="titulo-diapositiva">Todos los errores en un solo código</h2>
+        </div>
+      </div>
+      <div class="paneles-codigo">
+        <div class="panel-codigo incorrecto">
+          <div class="encabezado-panel">
+            <div class="etiqueta-panel etiqueta-incorrecta">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+              CON TODOS LOS ERRORES ✕
+            </div>
+            <div class="puntos-panel"><span></span><span></span><span></span></div>
+          </div>
+          <pre class="contenido-codigo codigo-incorrecto"><span class="kw">class</span> user_Manager {       <span class="comment">// ✗ Error 2: snake_case</span>
+  <span class="fn">constructor</span>() {
+    <span class="kw">this</span>.d = [];            <span class="comment">// ✗ Error 1: una letra</span>
+    <span class="kw">this</span>.active = <span class="kw">false</span>;   <span class="comment">// ✗ Error 5: sin prefijo</span>
+  }
+
+  <span class="fn">AddUsr</span>(n, a, e) {        <span class="comment">// ✗ Error 1+2: letras+mezcla</span>
+    <span class="kw">const</span> usrObj = {       <span class="comment">// ✗ Error 3: abreviación</span>
+      nm: n,               <span class="comment">// ✗ Error 3: críptico</span>
+      ag: a,
+      em: e
+    };
+    <span class="kw">const</span> temp = <span class="kw">this</span>.<span class="fn">chk</span>(a); <span class="comment">// ✗ Error 4: nombre vago</span>
+    <span class="kw">if</span> (temp) {
+      <span class="kw">this</span>.d.<span class="fn">push</span>(usrObj);
+    }
+  }
+
+  <span class="fn">chk</span>(x) {                 <span class="comment">// ✗ Error 1+3+4: triple error</span>
+    <span class="kw">return</span> x &gt;= <span class="num">18</span>;
+  }
+}</pre>
+        </div>
+        <div class="panel-codigo correcto">
+          <div class="encabezado-panel">
+            <div class="etiqueta-panel etiqueta-correcta">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              CÓDIGO CORREGIDO ■
+            </div>
+            <div class="puntos-panel puntos-correctos"><span></span><span></span><span></span></div>
+          </div>
+          <pre class="contenido-codigo codigo-correcto"><span class="kw">class</span> UserManager {            <span class="comment">// ✓ PascalCase</span>
+  <span class="fn">constructor</span>() {
+    <span class="kw">this</span>.users = [];           <span class="comment">// ✓ nombre descriptivo</span>
+    <span class="kw">this</span>.isActive = <span class="kw">false</span>;    <span class="comment">// ✓ prefijo is</span>
+  }
+
+  <span class="fn">addUser</span>(name, age, email) { <span class="comment">// ✓ camelCase + descriptivo</span>
+    <span class="kw">const</span> newUser = {          <span class="comment">// ✓ claro</span>
+      name: name,              <span class="comment">// ✓ sin abreviaciones</span>
+      age: age,
+      email: email
+    };
+    <span class="kw">const</span> isValidAge = <span class="kw">this</span>.<span class="fn">validateAge</span>(age); <span class="comment">// ✓ is + descriptivo</span>
+    <span class="kw">if</span> (isValidAge) {
+      <span class="kw">this</span>.users.<span class="fn">push</span>(newUser);
+    }
+  }
+
+  <span class="fn">validateAge</span>(age) {          <span class="comment">// ✓ verbo + descriptor</span>
+    <span class="kw">return</span> age &gt;= <span class="num">18</span>;
+  }
+}</pre>
+        </div>
+      </div>
+      <div class="resumen-ejemplo">
+        <div class="tarjeta-resumen-ejemplo"><span class="numero-resumen">#1</span><div class="titulo-resumen">Una letra</div><div class="cambio-resumen">d → users</div></div>
+        <div class="tarjeta-resumen-ejemplo"><span class="numero-resumen">#2</span><div class="titulo-resumen">Convención</div><div class="cambio-resumen">user_Manager → UserManager</div></div>
+        <div class="tarjeta-resumen-ejemplo"><span class="numero-resumen">#3</span><div class="titulo-resumen">Abreviación</div><div class="cambio-resumen">usrObj → newUser</div></div>
+        <div class="tarjeta-resumen-ejemplo"><span class="numero-resumen">#4</span><div class="titulo-resumen">Propósito</div><div class="cambio-resumen">temp → isValidAge</div></div>
+        <div class="tarjeta-resumen-ejemplo"><span class="numero-resumen">#5</span><div class="titulo-resumen">Booleana</div><div class="cambio-resumen">active → isActive</div></div>
+      </div>
+    </section>
+
+    <!-- DIAPOSITIVA 8: RESUMEN -->
+    <section class="diapositiva" id="slide-7">
+      <div class="decoracion-fondo">
+        <span class="llave-fondo izquierda">{</span>
+        <span class="llave-fondo derecha">}</span>
+      </div>
+      <div class="encabezado-diapositiva">
+        <div class="icono-encabezado" style="background: linear-gradient(135deg,#7c3aed,#5b21b6)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div>
+          <div class="etiqueta-error">CIERRE</div>
+          <h2 class="titulo-diapositiva">Resumen de Buenas Prácticas</h2>
+        </div>
+        <div class="regla-dorada">
+          <div class="etiqueta-regla-dorada">Regla de oro</div>
+          <div class="texto-regla-dorada">"El código se lee más de lo que se escribe"</div>
+        </div>
+      </div>
+      <div class="cuadricula-resumen">
+        <div class="tarjeta-buena-practica">
+          <div class="icono-practica" style="background:linear-gradient(135deg,#e53e3e,#c53030)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M4 9h16M4 15h16"/></svg>
+          </div>
+          <h3>Nombres descriptivos</h3>
+          <p>Nunca uses x, n, d o tmp. Escribe lo que el dato representa.</p>
+          <div class="numero-practica">01</div>
+        </div>
+        <div class="tarjeta-buena-practica">
+          <div class="icono-practica" style="background:linear-gradient(135deg,#d69e2e,#b7791f)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27z"/></svg>
+          </div>
+          <h3>Convención consistente</h3>
+          <p>Elige un estilo (camelCase, snake_case) y úsalo en todo el proyecto.</p>
+          <div class="numero-practica">02</div>
+        </div>
+        <div class="tarjeta-buena-practica">
+          <div class="icono-practica" style="background:linear-gradient(135deg,#e05799,#9b2c6e)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="4 7 4 4 20 4 20 7"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
+          </div>
+          <h3>Sin abreviaciones</h3>
+          <p>Escribe las palabras completas. El autocompletado es tu aliado.</p>
+          <div class="numero-practica">03</div>
+        </div>
+        <div class="tarjeta-buena-practica">
+          <div class="icono-practica" style="background:linear-gradient(135deg,#319795,#2c7a7b)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/></svg>
+          </div>
+          <h3>El nombre = propósito</h3>
+          <p>Si necesitas un comentario para explicar un nombre, es un mal nombre.</p>
+          <div class="numero-practica">04</div>
+        </div>
+        <div class="tarjeta-buena-practica">
+          <div class="icono-practica" style="background:linear-gradient(135deg,#38a169,#276749)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72"/></svg>
+          </div>
+          <h3>Prefijos en booleanas</h3>
+          <p>Usa is, has, can, should para que se lean como preguntas.</p>
+          <div class="numero-practica">05</div>
+        </div>
+      </div>
+      <div class="banner-final">
+        Código limpio no es solo código que funciona — es código que cualquier persona puede leer, entender y mantener. <span class="texto-destacado-banner">Nombrar bien es la habilidad más subestimada de la programación.</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FLECHAS DE NAVEGACIÓN -->
+  <button class="flecha-navegacion anterior" id="btn-prev" aria-label="Anterior">&#10094;</button>
+  <button class="flecha-navegacion siguiente" id="btn-next" aria-label="Siguiente">&#10095;</button>
+
+  <!-- BOTÓN DE AYUDA -->
+  <button class="boton-ayuda" id="btn-help" title="Atajos de teclado">?</button>
+
+  <!-- MODAL DE ATAJOS DE TECLADO -->
+  <div class="fondo-modal" id="modal-overlay">
+    <div class="ventana-modal">
+      <h3>Atajos de teclado</h3>
+      <ul>
+        <li><kbd>→</kbd> / <kbd>Space</kbd> — Siguiente diapositiva</li>
+        <li><kbd>←</kbd> — Diapositiva anterior</li>
+        <li><kbd>Home</kbd> — Ir al inicio</li>
+        <li><kbd>End</kbd> — Ir al final</li>
+        <li><kbd>Esc</kbd> — Cerrar este modal</li>
+      </ul>
+      <button class="boton-cerrar-modal" id="modal-close">Cerrar</button>
+    </div>
+  </div>
+<script src="main.js"></script>
+</body>
+</html>
