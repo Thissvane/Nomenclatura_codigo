@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeMaster Quiz — Buenas Prácticas</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<canvas id="stars-canvas"></canvas>
+
+<div class="game-wrapper" id="game-wrapper">
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo-text">CodeMaster Quiz</div>
+    <div class="logo-sub">Buenas Prácticas de Nomenclatura</div>
+  </header>
+
+  <!-- HUD -->
+  <div class="hud" id="hud">
+    <div class="hud-score" id="score-display">⭐ 0 pts</div>
+    <div class="progress-track">
+      <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+    </div>
+    <div class="hud-timer" id="timer-display">30</div>
+  </div>
+
+  <!-- QUESTION CARD -->
+  <div class="question-card" id="question-card">
+    <div class="q-meta">
+      <span class="q-number-badge" id="q-badge">PREGUNTA 1 / 10</span>
+      <span class="q-category" id="q-category">VARIABLES</span>
+      <span class="q-prize" id="q-prize">💰 100 pts</span>
+    </div>
+    <div class="question-text" id="question-text"></div>
+    <div class="options-grid" id="options-grid"></div>
+  </div>
+
+  <!-- LIFELINES -->
+  <div class="lifelines" id="lifelines">
+    <button class="lifeline-btn" id="ll-hint" onclick="useLifelineHint()">
+      <span class="lifeline-icon">💡</span> Pista
+    </button>
+  </div>
+
+  <!-- PRIZE LADDER -->
+  <div class="prize-ladder" id="prize-ladder"></div>
+
+  <!-- FINISH CARD -->
+  <div class="finish-card" id="finish-card">
+    <div class="finish-icon" id="finish-icon">🏆</div>
+    <div class="finish-title">Juego Terminado</div>
+    <div class="finish-score" id="finish-score">0 pts</div>
+    <div class="finish-msg" id="finish-msg"></div>
+    <button class="btn-restart" onclick="restartGame()">JUGAR DE NUEVO</button>
+  </div>
+
+</div>
+
+<!-- FEEDBACK TOAST -->
+<div class="feedback-toast" id="feedback-toast"></div>
+<script src="JS/main.js"></script>
+</body>
+</html>

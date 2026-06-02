@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resultado — CodeMaster Quiz</title>
+  <link rel="stylesheet" href="CSS/estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<canvas id="bg-canvas"></canvas>
+<div class="blob" id="blob" style="top:-100px;left:-100px;"></div>
+
+<div class="wrapper">
+  <div class="result-card" id="result-card">
+
+    <div class="ring-container">
+      <div class="ring" id="ring"></div>
+      <span class="result-icon" id="result-icon">🏆</span>
+    </div>
+
+    <div class="result-label" id="result-label">RESULTADO</div>
+    <div class="result-message" id="result-message">Cargando...</div>
+
+    <div class="score-pill">
+      <span>⭐</span>
+      <span id="score-text">0 pts</span>
+    </div>
+
+    <div class="q-progress">
+      <div class="q-progress-label" id="progress-label">PROGRESO</div>
+      <div class="q-progress-track">
+        <div class="q-progress-fill" id="progress-fill" style="width:0%"></div>
+      </div>
+    </div>
+
+    <p class="result-sub" id="result-sub"></p>
+
+    <a id="action-btn" class="action-btn" href="#">
+      <span id="btn-icon">▶</span>
+      <span id="btn-text">Continuar</span>
+    </a>
+
+    <a class="home-link" href="index.html">↩ Volver al inicio</a>
+  </div>
+</div>
+<script src="JS/script.js"></script>
+</body>
+</html>
