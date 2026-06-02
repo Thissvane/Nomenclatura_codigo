@@ -1,0 +1,24 @@
+name: deploy
+
+on:
+  push:
+    branches: [ main ] # Cambia "main" por "master" si tu rama principal se llama master
+
+# AQUÍ QUEDA LA SOLUCIÓN AL WARNING:
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Pages
+        uses: actions/configure-pages@v5
+
+      - name: Subir artefacto
+        uses: actions/upload-artifact@v4
+        with:
+          path: '.' # Sube los archivos de la raíz. Si tu proyecto web está dentro de "Juego_Exposición", cambia el punto por: ./Juego_Exposición
